@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="app">
+  <!-- {{message}} -->
+
+  <!-- <form action=""> -->
+  <form @submit.prevent="addToDo">
+    <label for="name">Task To Add:</label>
+    <input v-model="newToDo" type="text" name="name">
+    <br>
+    <!-- <label for="surname" name="surname">Surname:</label>
+    <input type="text">
+    <br>
+    <label for="message">Message:</label>
+    <input type="textarea" name="message" id=""> -->
+    <input type="submit" name="button" value="Add Task">
+  </form>
+
+  {{newToDo}}
+
+  <ul><li v-for="todo in todos">
+    {{todo}}
+    <input type="checkbox" v-model="todo.done">
+    <span :class="{ donestyle: todo.done}">{{todo.title}}</span>
+    <button @click="removeToDo(todo)" type="button">Remove the Task</button>
+    
+  </li>
+
+  
+</ul>
+
+<button @click="allDone">All Done</button>
+
+
+
+    </div>
+
+    <!-- <h1>This is my todo App!</h1> -->
+
+
+    <!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="script.js"></script>
+    
+</body>
+</html>

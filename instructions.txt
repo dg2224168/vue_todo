@@ -1,0 +1,5 @@
+STEP 1: Create a folder: add html, css and js file.
+STEP 2: Add vuejs link to the html file.
+STEP 3: Add html elements in html file, css file and js file.
+STEP 4: Edit JS file.
+STEP 5:

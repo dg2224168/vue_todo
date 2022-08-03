@@ -1,0 +1,99 @@
+#header {
+    background-color: aqua;
+    color: wheat;
+}
+
+.container {
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+
+body {
+    margin: 0%;
+}
+
+#navbar {
+    background-color: black;
+   
+}
+
+#navbar ul {
+   list-style: none;
+   padding: 0;
+  
+}
+
+#navbar li {
+    display: inline;
+   
+   
+}
+
+#navbar a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+
+#navbar a:hover {
+    color: red;
+}
+
+#showcase {
+    background-image: url('lofoten-g33cbd3bef_1920.jpg');
+    background-position: center;
+    min-height: 300px;
+    /* height: 300px; */
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#showcase h1 {
+
+    color: white;
+    padding-top: 50px;
+    font-size: 50px;
+
+
+}
+
+#sidecontent {
+    float: right;
+    width: 30%;
+    padding: 0 30px;
+    background: darkgray;
+    color: white;
+    padding: 10px; 
+    box-sizing: border-box;
+    
+}  
+
+#maincontent {
+    float: left;
+    width: 70%;
+    /* padding: 0 10px; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 1000px;
+    background: gray;
+
+}
+
+
+@media(max-width:600px){
+    #maincontent {
+        width:100%;
+        float:none;
+    }
+    #sidecontent {
+        width:100%;
+        float:none;
+    }
+}
+
